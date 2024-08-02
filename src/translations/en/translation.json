@@ -1,0 +1,13 @@
+{
+    "Header": {
+        "FirstCaption": "This is",
+        "AboutText": "I'm aspiring JavaScript FrontEnd Developer working in React.js framework. I am currently looking for working opportunities",
+        "HireButtonText": "Hire me"
+    },
+    "Skills": {
+        "Title": "My skillset includes 🛠️"
+    },
+    "WantToLearn": {
+        "Title": "What I want to learn next 🚀"
+    }
+}

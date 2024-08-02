@@ -1,0 +1,13 @@
+{
+    "Header": {
+        "FirstCaption": "Mam na imię",
+        "AboutText": "Jestem początkującym FrontEnd Developerem. Aktualnie szukam swojej pierwszej pracy jako programista",
+        "HireButtonText": "Zatrudnij mnie"
+    },
+    "Skills": {
+        "Title": "Moje umiejętności 🛠️"
+    },
+    "WantToLearn": {
+        "Title": "Czego chcę się nauczyć"
+    }
+}
