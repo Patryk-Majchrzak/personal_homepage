@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { HeaderContainer, ImageContainer, Photo, TextContainer, MainHeader, FirstCaption, AboutText, Button } from "./styled";
+import { HeaderContainer, ImageContainer, Photo, TextContainer, MainHeader, FirstCaption, AboutText, Button, Link } from "./styled";
 import photoMain from "./photo_main.jpg";
+import { ThemeSwitch } from "./ThemeSwitch";
 
 export const Header = () => {
 
@@ -8,6 +9,7 @@ export const Header = () => {
 
     return (
         <HeaderContainer>
+            <ThemeSwitch />
             <ImageContainer>
                 <Photo src={photoMain} alt="author_photo" />
             </ImageContainer>
@@ -15,7 +17,7 @@ export const Header = () => {
                 <FirstCaption>{t("Header.FirstCaption")}</FirstCaption>
                 <MainHeader>Patryk Majchrzak</MainHeader>
                 <AboutText>{t("Header.AboutText")}</AboutText>
-            <Button><a href="mailto:pmaj12345@gmail.com">{t("Header.HireButtonText")}</a></Button>
+            <Button><Link href="mailto:pmaj12345@gmail.com">{t("Header.HireButtonText")}</Link></Button>
             </TextContainer>
         </HeaderContainer>
     );
