@@ -23,26 +23,26 @@ export const skills = [
     "Scrum",
     "Local Storage & Cookies",
     "Working with API", 
-     [
-        "XMLHttpRequest",
-        "Fetch",
-        "Axios (preferable)"
-     ],
+   //   [
+   //      "XMLHttpRequest",
+   //      "Fetch",
+   //      "Axios (preferable)"
+   //   ],
      "Promises, Async/Await",
      "React.js",
      "Hooks",
-     [
-        "useState",
-        "useEffect",
-        "useCurrent",
-        "useRef",
-        "useSelector",
-        "useDispatch",
-        "useParams",
-        "useHistory",
-        "useLocation",
-        "custom hooks"
-     ],
+   //   [
+   //      "useState",
+   //      "useEffect",
+   //      "useCurrent",
+   //      "useRef",
+   //      "useSelector",
+   //      "useDispatch",
+   //      "useParams",
+   //      "useHistory",
+   //      "useLocation",
+   //      "custom hooks"
+   //   ],
      "Console",
      "try/catch",
      "Error handling",
