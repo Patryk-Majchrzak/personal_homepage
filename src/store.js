@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import languageReducer from "./features/personalHomepage/LanguageSeletor/languageSlice";
+import languageReducer from "./common/LanguageSeletor/languageSlice";
+import { themeReducer } from "./common/ThemeSwitch/themeSlice";
 
 
 export default configureStore({
     reducer: {
-        language: languageReducer
+        language: languageReducer,
+        theme: themeReducer,
     },
 })
