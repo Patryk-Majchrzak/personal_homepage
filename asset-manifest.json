@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/personal_homepage/static/js/main.a1e007c3.js",
+    "static/js/453.61d4ab14.chunk.js": "/personal_homepage/static/js/453.61d4ab14.chunk.js",
+    "static/media/photo_main.jpg": "/personal_homepage/static/media/photo_main.aff40e003f547e0285b9.jpg",
+    "index.html": "/personal_homepage/index.html",
+    "static/media/flagUK.svg": "/personal_homepage/static/media/flagUK.583699d9c65e0d7801742d879d53b007.svg",
+    "static/media/flagPL.webp": "/personal_homepage/static/media/flagPL.b0bd76eb6d49c56663eb.webp",
+    "main.a1e007c3.js.map": "/personal_homepage/static/js/main.a1e007c3.js.map",
+    "453.61d4ab14.chunk.js.map": "/personal_homepage/static/js/453.61d4ab14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a1e007c3.js"
+  ]
+}
