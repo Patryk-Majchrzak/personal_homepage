@@ -7,6 +7,8 @@ import { Footer } from "../common/Footer";
 
 function App() {
 
+  welcome();
+  
   return (
     <>
       <Main>
