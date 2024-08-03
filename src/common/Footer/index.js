@@ -9,8 +9,8 @@ export const Footer = () => {
     return (
         <FooterContainer>
             <SmallCaption>{t("Footer.SmallCaption")}</SmallCaption>
-            <Link href="tel:+48510115109">510115109</Link><br/>
-            <Link href="mailto:pmaj12345@gmail.com">pmaj12345@gmail.com</Link>
+            <Link href="mailto:pmaj12345@gmail.com">pmaj12345@gmail.com</Link><br/>
+            <Link href="tel:+48510115109">510115109</Link>
             <Paragraph>{t("Footer.Paragraph")}</Paragraph>
         </FooterContainer>
     )

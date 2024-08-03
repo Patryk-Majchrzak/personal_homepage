@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-    max-width:1088px;
+    max-width:${({theme}) => theme.width.section}px;
     display:grid;
-    grid-template-columns: 1fr 2fr auto;
+    grid-template-columns: 1fr 3fr auto;
     grid-gap:72px;
     margin-top:119px;
 `
@@ -20,23 +20,22 @@ export const TextContainer = styled.div`
 `
 
 export const MainHeader = styled.h1`
-    font-weight:900;
-    font-size:38px;
-    color: rgba(37, 37, 37, 1);
+    font-weight:${({theme}) => theme.fontWeight.veryBold};
+    font-size:${({theme}) => theme.fontSize.mainHeader}px;
+    color: ${({theme}) => theme.colors.textMain};
 `
 
 export const AboutText = styled.p`
-    font-weight:400;
     font-size: 20px;
-    color: rgba(110, 126, 145, 1);
+    color: ${({theme}) => theme.colors.textSecondary};
 `
 
 export const Link =  styled.a`
     text-decoration: none;
-    color: rgba(255, 255, 255, 1);
+    color: ${({theme}) => theme.colors.textMain};
 `
 
 export const Button = styled.button`
     padding: 12px 16px;
-    background-color: rgba(3, 102, 214, 1);
+    background-color: ${({theme}) => theme.colors.buttonBackground};
 `
