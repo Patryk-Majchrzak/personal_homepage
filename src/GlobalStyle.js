@@ -11,6 +11,5 @@ export const GlobalStyle = createGlobalStyle`
 
     body{
         font-family: "Inter", sans-serif;
-        background-color: rgba(251, 251, 254, 1);
     }
 `
