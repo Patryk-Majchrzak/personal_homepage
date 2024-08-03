@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { Main } from "./styled";
+import { Main, Container } from "./styled";
 import { Header } from "../common/Header";
 import { Skills } from "../features/personalHomepage/Skills";
 import { WantToLearn } from "../features/personalHomepage/WantToLearn";
@@ -21,14 +21,16 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Main>
-          <LanguageSelector />
-          <Header />
-          <Skills />
-          <WantToLearn />
-          <Repositories />
-        </Main>
-        <Footer />
+        <Container>
+          <Main>
+            <LanguageSelector />
+            <Header />
+            <Skills />
+            <WantToLearn />
+            <Repositories />
+          </Main>
+          <Footer />
+        </Container>
       </ThemeProvider>
     </>
   );
