@@ -1,8 +1,8 @@
 {   "Theme": {
-        "DarkMode": "DarkMode"
+        "DarkMode": "Ciemny motyw"
     },
     "Header": {
-        "FirstCaption": "Mam na imię",
+        "SmallCaption": "Mam na imię",
         "AboutText": "Jestem początkującym FrontEnd Developerem. Aktualnie szukam swojej pierwszej pracy jako programista",
         "HireButtonText": "Zatrudnij mnie"
     },
@@ -16,6 +16,7 @@
         "Projects": "Moje projekty"
     },
     "Footer": {
+        "SmallCaption": "Porozmawiajmy",
         "Paragraph": "Jestem otwarty na propozycje pracy. Jeśli tworzysz stronę internetową lub aplikację mobilną to pomogę ci w realizacji tego projektu 😊. Skontaktuj się ze mną mailowo lub telefonicznie."
     }
 }
