@@ -12,17 +12,11 @@ export const ImageContainer = styled.div`
 `
 
 export const Photo = styled.img`
-    width:398px;
+    max-width:398px;
     border-radius:50%;
 `
 
 export const TextContainer = styled.div`
-`
-
-export const FirstCaption = styled.p`
-    font-weight:700;
-    font-size: 12px;
-    color: rgba(110, 126, 145, 1);
 `
 
 export const MainHeader = styled.h1`

@@ -8,7 +8,9 @@ export const FooterContainer = styled.footer`
 `
 
 export const Link = styled.a`
-` 
+    text-decoration:none;
+    color: black;
+`
 
 export const Paragraph = styled.p`
 `
