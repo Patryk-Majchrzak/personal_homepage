@@ -1,4 +1,6 @@
-{
+{   "Theme": {
+        "DarkMode": "DarkMode"
+    },
     "Header": {
         "FirstCaption": "Mam na imię",
         "AboutText": "Jestem początkującym FrontEnd Developerem. Aktualnie szukam swojej pierwszej pracy jako programista",
@@ -9,5 +11,11 @@
     },
     "WantToLearn": {
         "Title": "Czego chcę się nauczyć"
+    },
+    "Portfolio": {
+        "Projects": "Moje projekty"
+    },
+    "Footer": {
+        "Paragraph": "Jestem otwarty na propozycje pracy. Jeśli tworzysz stronę internetową lub aplikację mobilną to pomogę ci w realizacji tego projektu 😊. Skontaktuj się ze mną mailowo lub telefonicznie."
     }
 }

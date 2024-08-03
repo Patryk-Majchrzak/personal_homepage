@@ -1,4 +1,7 @@
 {
+    "Theme": {
+        "DarkMode": "Dark mode"
+    },
     "Header": {
         "FirstCaption": "This is",
         "AboutText": "I'm aspiring JavaScript FrontEnd Developer working in React.js framework. I am currently looking for working opportunities",
@@ -9,5 +12,11 @@
     },
     "WantToLearn": {
         "Title": "What I want to learn next 🚀"
+    },
+    "Portfolio": {
+        "Projects": "My recent projects"
+    },
+    "Footer": {
+        "Paragraph": "I am always open to new projects, so if you have a website, dashboard or mobile-app in mind and need some help to make your dream come to life, feel free to contact me."
     }
 }

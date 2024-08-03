@@ -1,11 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { FooterContainer, Link, Paragraph } from "./styled"
 
 export const Footer = () => {
 
+    const [t] = useTranslation("translation");
+
     return (
         <FooterContainer>
+            <Link href="tel:+48510115109">510115109</Link><br/>
             <Link href="mailto:pmaj12345@gmail.com">pmaj12345@gmail.com</Link>
-            <Paragraph>I am always open to new projects, so if you have a website, dashboard or mobile-app in mind and need some help to mske your dream come to life, feel free to contact me.</Paragraph>
+            <Paragraph>{t("Footer.Paragraph")}</Paragraph>
         </FooterContainer>
     )
 }
