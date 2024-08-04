@@ -10,6 +10,8 @@ export const DropdownContent = styled.div`
   opacity: 0;
   position: absolute;
   z-index: 1;
+  top: 100%;
+  right: 0;
   transition: opacity 0.3s ease-in-out;
 
   ${DropdownContainer}:hover & {
@@ -24,5 +26,4 @@ export const Option = styled.div`
 export const OptionImage = styled.img`
     width: 20px;
     height: 20px;
-    margin-right: 10px;
 `;

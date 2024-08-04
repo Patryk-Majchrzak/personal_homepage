@@ -10,15 +10,17 @@ export const Header = () => {
 
     return (
         <HeaderContainer>
-            <ThemeSwitch />
-            <ImageContainer>
+            <div>
                 <Photo src={photoMain} alt="author_photo" />
-            </ImageContainer>
+            </div>
             <TextContainer>
+            <div>
                 <SmallCaption>{t("Header.SmallCaption")}</SmallCaption>
                 <MainHeader>Patryk Majchrzak</MainHeader>
                 <AboutText>{t("Header.AboutText")}</AboutText>
             <Button><Link href="mailto:pmaj12345@gmail.com">{t("Header.HireButtonText")}</Link></Button>
+            </div>
+            <ThemeSwitch />
             </TextContainer>
         </HeaderContainer>
     );

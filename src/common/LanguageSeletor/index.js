@@ -12,8 +12,8 @@ const LanguageSelector = () => {
   const { i18n } = useTranslation();
 
   const languageOptions = [
-    { id: 1, image: flagPL, value: "pl" },
-    { id: 2, image: flagUK, value: "en" },
+    { id: 1, image: flagUK, value: "en" },
+    { id: 2, image: flagPL, value: "pl" },
   ];
 
   const activeLanguage = languageOptions.find(languageOption => languageOption.id === activeLanguageOptionId)

@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
     max-width:${({theme}) => theme.width.section}px;
     display:grid;
-    grid-template-columns: 1fr 3fr auto;
-    grid-gap:72px;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:66px;
     margin-top:119px;
 `
 
@@ -17,6 +17,8 @@ export const Photo = styled.img`
 `
 
 export const TextContainer = styled.div`
+    display:grid;
+    grid-template-columns:1fr auto
 `
 
 export const MainHeader = styled.h1`
@@ -32,10 +34,11 @@ export const AboutText = styled.p`
 
 export const Link =  styled.a`
     text-decoration: none;
-    color: ${({theme}) => theme.colors.textMain};
+    color: ${({theme}) => theme.colors.buttonText};
 `
 
 export const Button = styled.button`
     padding: 12px 16px;
     background-color: ${({theme}) => theme.colors.buttonBackground};
+    border:none;
 `

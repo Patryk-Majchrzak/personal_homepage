@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { Container, IconBox, Button } from "./styled"
-import { SmallCaption } from "../SmallCaption/styled";
 import { selectIsDarkTheme, setTheme } from "./themeSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { Container, IconBox, Button, Icon } from "./styled"
+import { SmallCaption } from "../SmallCaption/styled";
+import icon from "./Icon.svg"
 
 export const ThemeSwitch = () => {
     const dispatch = useDispatch();
@@ -16,6 +17,7 @@ export const ThemeSwitch = () => {
             <SmallCaption>{t("Theme.DarkMode")} {isDarkTheme ? "on" : "off"}</SmallCaption>
             <Button onClick={changeTheme}>
                 <IconBox $movetoright={isDarkTheme}>
+                    <Icon src={icon}/>
                 </IconBox>
             </Button>
         </Container>
