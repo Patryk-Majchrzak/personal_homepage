@@ -11,12 +11,12 @@ import { ThemeProvider } from "styled-components";
 import { selectIsDarkTheme } from "../common/ThemeSwitch/themeSlice";
 import { darkTheme, lightTheme } from "../theme";
 
+welcome();
+
 function App() {
 
   const isDarkTheme = useSelector(selectIsDarkTheme);
   const theme = isDarkTheme === false ? lightTheme : darkTheme
-
-  welcome();
 
   return (
     <>
