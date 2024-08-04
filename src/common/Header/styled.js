@@ -8,9 +8,6 @@ export const HeaderContainer = styled.header`
     margin-top:119px;
 `
 
-export const ImageContainer = styled.div`
-`
-
 export const Photo = styled.img`
     max-width:398px;
     border-radius:50%;
@@ -18,7 +15,7 @@ export const Photo = styled.img`
 
 export const TextContainer = styled.div`
     display:grid;
-    grid-template-columns:1fr auto
+    grid-template-columns:1fr auto;
 `
 
 export const MainHeader = styled.h1`

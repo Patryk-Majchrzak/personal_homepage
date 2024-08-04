@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { HeaderContainer, ImageContainer, Photo, TextContainer, MainHeader, AboutText, Button, Link } from "./styled";
+import { HeaderContainer, Photo, TextContainer, MainHeader, AboutText, Button, Link } from "./styled";
 import photoMain from "./photo_main.jpg";
 import { ThemeSwitch } from "../ThemeSwitch";
 import { SmallCaption } from "../SmallCaption/styled";
