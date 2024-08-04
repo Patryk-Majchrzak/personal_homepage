@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const languageSlice = createSlice({
     name: "language",
     initialState: {
-        language: "pl",
-        title: "Lista zadań w React.js"
+        language: "en",
+        title: "Personal homepage"
     },
     reducers:
     {
@@ -12,7 +12,7 @@ const languageSlice = createSlice({
             state.language = language
         },
         setTitle: (state, {payload: language}) => {
-            state.title = language === "en" ? "Personal Homepage" : "Moja wizytówka"
+            state.title = language === "en" ? "Personal homepage" : "Moja wizytówka"
         }
     },
 });
