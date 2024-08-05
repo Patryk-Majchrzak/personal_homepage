@@ -1,18 +1,26 @@
 import { useTranslation } from "react-i18next";
-import { Header, RepoHeader, SectionContainer, SubHeader  } from "./RepositioriesSection/styled";
 import { Content } from "./Content";
+import { GHIcon, Header, RepoHeader, SubHeader } from "./styled";
 
 export const Repositories = () => {
 
     const [t] = useTranslation("translation");
 
     return (
-        <SectionContainer>
+        <>
             <RepoHeader>
+                <a
+                    href="https://github.com/Patryk-Majchrzak"
+                    target="_blank"
+                    rel="norefferer noopener"
+                    title="https://github.com/Patryk-Majchrzak"
+                >
+                    <GHIcon />
+                </a>
                 <Header>Portfolio</Header>
                 <SubHeader>{t("Portfolio.Projects")}</SubHeader>
             </RepoHeader>
             <Content />
-        </SectionContainer>
+        </>
     )
 }
