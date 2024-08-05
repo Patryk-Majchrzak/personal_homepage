@@ -1,16 +1,16 @@
-import { List } from "./styled";
+import { List, ListItem } from "./styled";
 
 export const renderSkills = (skills) => (
   <List>
     {skills.map((skill, index) => {
       if (!Array.isArray(skill)) {
-        return <li key={index}>{skill}</li>;
+        return <ListItem key={index}>{skill}</ListItem>;
       } else {
         return (
-          <li key={index}>
+          <ListItem key={index}>
             {skills[index - 1]}
             {renderSubslist(skill)}
-          </li>
+          </ListItem>
         );
       }
     })}
