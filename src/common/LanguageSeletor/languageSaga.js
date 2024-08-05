@@ -12,6 +12,6 @@ function* changeLanguageSaga({payload: language}) {
     yield call(changeLanguage, language);
   }
   
-  export function* watchLanguageChange() {
+  export function* languageSaga() {
     yield takeLatest(setLanguage.type, changeLanguageSaga);
   }
