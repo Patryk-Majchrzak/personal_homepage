@@ -16,7 +16,7 @@ welcome();
 function App() {
 
   const isDarkTheme = useSelector(selectIsDarkTheme);
-  const theme = isDarkTheme === false ? lightTheme : darkTheme
+  const theme = isDarkTheme  ? darkTheme : lightTheme
 
   return (
     <>
