@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
     background-color:${({theme}) => theme.colors.sectionBackground};
-    box-shadow:${({theme}) => theme.boxShadows.section},
-    ${({theme}) => theme.boxShadows.sectionSecondaryShadow};
+    box-shadow:${({theme}) => theme.boxShadows.section};
     padding:32px;
 `
 
