@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {ReactComponent as Envelope} from "./images/Envelope.svg"
 
 export const HeaderContainer = styled.header`
     max-width:${({theme}) => theme.width.section}px;
@@ -32,10 +33,16 @@ export const AboutText = styled.p`
 export const Link =  styled.a`
     text-decoration: none;
     color: ${({theme}) => theme.colors.buttonText};
+    display:flex;
+    font-weight: ${({theme}) => theme.fontWeight.lightBold};
 `
 
 export const Button = styled.button`
-    padding: 12px 16px;
+    padding: 16px;
     background-color: ${({theme}) => theme.colors.buttonBackground};
     border:none;
+`
+
+export const EnvelopeIcon = styled(Envelope)`
+    margin-right: 16px;
 `

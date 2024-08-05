@@ -16,6 +16,7 @@ const baseTheme = {
         section: `0px 16px 58px 0px ${colorNames.violet}, 0px -2px 50px 0px ${colorNames.violet}`
     },
     fontWeight: {
+        lightBold: 600,
         bold: 700,
         veryBold: 900
     },
@@ -42,6 +43,7 @@ export const lightTheme = {
         themeSwitcherBackground: colorNames.mercury,
         iconBoxBackground: colorNames.slateGray,
         section: colorNames.white,
+        listMarkers: colorNames.scienceBlue,
     },
     borders: {
         themeSwitcher: `1px ${colorNames.iron}`
@@ -65,6 +67,7 @@ export const darkTheme = {
         themeSwitcherBackground: colorNames.darkGray,
         iconBoxBackground: colorNames.white,
         section: colorNames.darkGray,
+        listMarkers: colorNames.dodgerBlue,
     },
     borders: {
         themeSwitcher: "none"
