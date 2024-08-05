@@ -13,8 +13,7 @@ const colorNames = {
 
 const baseTheme = {
     boxShadows: {
-        section: `0px 16px 58px 0px ${colorNames.violet};`,
-        sectionSecondShadow: `0px -2px 50px 0px ${colorNames.violet}`
+        section: `0px 16px 58px 0px ${colorNames.violet}, 0px -2px 50px 0px ${colorNames.violet}`
     },
     fontWeight: {
         bold: 700,
@@ -22,7 +21,8 @@ const baseTheme = {
     },
     fontSize: {
         link: 32,
-        mainHeader: 38
+        mainHeader: 38,
+        small: 12
     },
     width: {
         document: 1216,
@@ -47,6 +47,7 @@ export const lightTheme = {
         themeSwitcher: `1px ${colorNames.iron}`
     },
     boxShadows: {
+        ...baseTheme.boxShadows,
         themeSwitcher: `0px 16px 58px 0px ${colorNames.violet}`,
         themeSwitcherSecondShadow: `0px -2px 50px 0px ${colorNames.violet}`
     }
@@ -69,6 +70,7 @@ export const darkTheme = {
         themeSwitcher: "none"
     },
     boxShadows: {
+        ...baseTheme.boxShadows,
         themeSwitcher: "none",
         themeSwitcherSecondShadow: "none"
     }
