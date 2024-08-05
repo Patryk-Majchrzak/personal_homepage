@@ -1,4 +1,6 @@
 import styled, {css} from "styled-components"
+import {ReactComponent as SunIcon} from "./Icon.svg"
+import { SmallCaption } from "../SmallCaption/styled"
 
 export const Container = styled.div`
     order: 1;
@@ -7,7 +9,15 @@ export const Container = styled.div`
     align-items:center;
 `
 
+export const ThemeSwitchCaption = styled(SmallCaption)`
+
+    @media(max-width: 600px){
+        display:none;
+    }
+`
+
 export const Button = styled.button`
+    cursor:pointer;
     border: ${({theme}) => theme.borders.themeSwitcher};
     width:48px;
     height:26px;
@@ -22,6 +32,7 @@ export const IconBox = styled.div`
     height:20px;
     border-radius:50%;
     transition: transform 0.2s;
+    padding:2px;
 
     ${({ $movetoright }) =>
     $movetoright &&
@@ -30,5 +41,5 @@ export const IconBox = styled.div`
     `}
 `
 
-export const Icon = styled.img`
+export const Icon = styled(SunIcon)`
 ` 
