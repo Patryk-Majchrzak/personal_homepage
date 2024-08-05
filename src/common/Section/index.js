@@ -1,8 +1,8 @@
-import { SectionContainer } from "./styled"
+import { SectionBody, SectionContainer, SectionHeader } from "./styled"
 
 export const Section = ({title, body}) => (
     <SectionContainer>
-        <h2>{title}</h2>
-        <div>{body}</div>
+        <SectionHeader>{title}</SectionHeader>
+        <SectionBody>{body}</SectionBody>
     </SectionContainer>
 )
