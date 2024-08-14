@@ -12,7 +12,7 @@ export const Repositories = () => {
                 <a
                     href="https://github.com/Patryk-Majchrzak"
                     target="_blank"
-                    rel="norefferer noopener"
+                    rel="noreferrer noopenner"
                     title="https://github.com/Patryk-Majchrzak"
                 >
                     <GHIcon />
