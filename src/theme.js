@@ -8,7 +8,9 @@ const colorNames = {
     dodgerBlue: "rgb(33, 136, 255)",
     darkGray: "rgba(54, 54, 54, 0.72)",
     iron: "rgba(209, 213, 218, 0.3)",
-    mercury: "rgb(229, 229, 229)"
+    mercury: "rgb(229, 229, 229)",
+    anakiwa: "rgba(140, 194, 255)",
+    shipCove: "rgba(109, 147, 190)"
 }
 
 const baseTheme = {
@@ -23,11 +25,19 @@ const baseTheme = {
     fontSize: {
         link: 32,
         mainHeader: 38,
+        linkButton: 20,
+        linkButtonMobile: 18,
         small: 12
     },
     width: {
         document: 1216,
         section: 1088
+    },
+    breakpoints: {
+        verySmall: 576,
+    },
+    borders: {
+        linkButton: `1px ${colorNames.iron}`
     }
 }
 
@@ -38,20 +48,23 @@ export const lightTheme = {
         sectionBackground: colorNames.white,
         textMain: colorNames.mineShaft,
         textSecondary: colorNames.slateGray,
-        buttonBackground: colorNames.scienceBlue,
-        buttonText: colorNames.white,
+        linkButtonBackground: colorNames.scienceBlue,
+        linkButtonText: colorNames.white,
         themeSwitcherBackground: colorNames.mercury,
         iconBoxBackground: colorNames.slateGray,
+        icon: colorNames.white,
         section: colorNames.white,
         listMarkers: colorNames.scienceBlue,
+        repoTiles: colorNames.white
     },
     borders: {
-        themeSwitcher: `1px ${colorNames.iron}`
+        ...baseTheme.borders,
+        themeSwitcher: `1px ${colorNames.iron}`,
     },
     boxShadows: {
         ...baseTheme.boxShadows,
-        themeSwitcher: `0px 16px 58px 0px ${colorNames.violet}`,
-        themeSwitcherSecondShadow: `0px -2px 50px 0px ${colorNames.violet}`
+        themeSwitcher: "none",
+        linkButtonHover: `-2px -2px 0px 0px ${colorNames.anakiwa}, 2px 2px 0px 0px ${colorNames.anakiwa}`
     }
 }
 
@@ -62,19 +75,22 @@ export const darkTheme = {
         sectionBackground: colorNames.darkGray,
         textMain: colorNames.white,
         textSecondary: colorNames.white,
-        buttonBackground: colorNames.dodgerBlue,
-        buttonText: colorNames.white,
+        linkButtonBackground: colorNames.dodgerBlue,
+        linkButtonText: colorNames.white,
         themeSwitcherBackground: colorNames.darkGray,
         iconBoxBackground: colorNames.white,
+        icon: colorNames.mineShaft,
         section: colorNames.darkGray,
         listMarkers: colorNames.dodgerBlue,
+        repoTiles: colorNames.darkGray,
     },
     borders: {
-        themeSwitcher: "none"
+        ...baseTheme.borders,
+        themeSwitcher: `1px ${colorNames.white}`,
     },
     boxShadows: {
         ...baseTheme.boxShadows,
-        themeSwitcher: "none",
-        themeSwitcherSecondShadow: "none"
+        themeSwitcher: `0px 16px 58px 0px ${colorNames.violet}, 0px -2px 50px 0px ${colorNames.violet}`,
+        linkButtonHover: `-2px -2px 0px 0px ${colorNames.shipCove},  2px 2px 0px 0px ${colorNames.shipCove}`
     }
 }
