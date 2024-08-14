@@ -12,4 +12,5 @@ export const SubHeader = styled.h3`
 `
 
 export const GHIcon = styled(GitHubIcon)`
+    color: ${({theme}) => theme.colors.iconGH}
 ` 

@@ -7,9 +7,9 @@ export const FooterContainer = styled.footer`
 
 export const Link = styled.a`
     text-decoration:none;
-    color: ${({theme}) => theme.colors.textMain};
     font-weight:${({theme}) => theme.fontWeight.veryBold};
     font-size:${({theme}) => theme.fontSize.link}px;
+    color: ${({theme}) => theme.colors.textMain};
 `
 
 export const Paragraph = styled.p`
