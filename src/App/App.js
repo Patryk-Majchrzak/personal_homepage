@@ -28,8 +28,8 @@ function App() {
             <Skills />
             <WantToLearn />
             <Repositories />
+            <Footer />
           </Main>
-          <Footer />
         </Container>
       </ThemeProvider>
     </>
