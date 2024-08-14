@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
 `
 
 export const Photo = styled.img`
-    max-width:398px;
+    max-width:20vw;
     border-radius:50%;
 `
 
@@ -30,17 +30,24 @@ export const AboutText = styled.p`
     color: ${({theme}) => theme.colors.textSecondary};
 `
 
-export const Link =  styled.a`
+export const ButtonLink =  styled.a`
+    display:inline-flex;
     text-decoration: none;
-    color: ${({theme}) => theme.colors.buttonText};
-    display:flex;
+    color: ${({theme}) => theme.colors.linkButtonText};
     font-weight: ${({theme}) => theme.fontWeight.lightBold};
-`
+    font-size: ${({theme}) => theme.fontSize.linkButton};
+    padding: 12px 16px;
+    background-color: ${({theme}) => theme.colors.linkButtonBackground};
+    border: ${({theme}) => theme.borders.linkButton};
+    align-items:center;
 
-export const Button = styled.button`
-    padding: 16px;
-    background-color: ${({theme}) => theme.colors.buttonBackground};
-    border:none;
+    &:hover {
+        box-shadow: ${({theme}) => theme.boxShadows.linkButtonHover}
+    }
+
+    @media (max-width: ${({theme}) => theme.breakpoints.verySmall}px){
+        font-size: ${({theme}) => theme.fontSize.linkButtonMobile}px
+    }
 `
 
 export const EnvelopeIcon = styled(Envelope)`
