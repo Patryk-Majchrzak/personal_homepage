@@ -1,16 +1,15 @@
 import { useSelector } from "react-redux";
 import { selectRepositories } from "../../repositoriesSlice";
+import { List, ListItem, Tile } from "./styled";
 
 export const Projects = () => {
 
     const repositories = useSelector(selectRepositories);
 
-    console.log(repositories)
     return (
-        <ul>
+        <List>
             {repositories.map(repository => (
-                <li key={repository.name}>
-                    <div>
+                <ListItem key={repository.name}>
                         <h2>{repository.name}</h2>
                         <p>{repository.description}</p>
                         <p>
@@ -33,9 +32,8 @@ export const Projects = () => {
                                 {repository.html_url}
                             </a>
                         </p>
-                    </div>
-                </li>
+                </ListItem>
             ))}
-        </ul>
+        </List>
     )
 }
