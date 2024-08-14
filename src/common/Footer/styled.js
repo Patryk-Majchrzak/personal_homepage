@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-    background-color:${({theme}) => theme.colors.sectionBackground};
     box-shadow:${({theme}) => theme.boxShadows.section};
-    padding:32px;
+    padding-bottom:109px;
 `
 
 export const Link = styled.a`
