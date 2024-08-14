@@ -55,6 +55,7 @@ export const lightTheme = {
         icon: colorNames.white,
         section: colorNames.white,
         listMarkers: colorNames.scienceBlue,
+        iconGH: colorNames.scienceBlue,
         repoTiles: colorNames.white
     },
     borders: {
@@ -82,6 +83,7 @@ export const darkTheme = {
         icon: colorNames.mineShaft,
         section: colorNames.darkGray,
         listMarkers: colorNames.dodgerBlue,
+        iconGH: colorNames.dodgerBlue,
         repoTiles: colorNames.darkGray,
     },
     borders: {
