@@ -17,12 +17,12 @@ export const ThemeSwitchCaption = styled(SmallCaption)`
 `
 
 export const Button = styled.button`
-    cursor:pointer;
+    cursor: pointer;
     border: ${({theme}) => theme.borders.themeSwitcher};
     width:48px;
     height:26px;
-    margin-left:12px;
-    border-radius:30px;
+    margin-left:12px; 
+    border-radius:12px;
     background-color: ${({theme}) => theme.colors.themeSwitcherBackground};
 `
 
@@ -32,7 +32,8 @@ export const IconBox = styled.div`
     height:20px;
     border-radius:50%;
     transition: transform 0.2s;
-    padding:2px;
+    padding:3px;
+    display: flex;
 
     ${({ $movetoright }) =>
     $movetoright &&
@@ -42,4 +43,5 @@ export const IconBox = styled.div`
 `
 
 export const Icon = styled(SunIcon)`
+    color:${({theme}) => theme.colors.icon}
 ` 
