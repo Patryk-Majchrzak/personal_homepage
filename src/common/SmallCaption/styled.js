@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const SmallCaption = styled.p`
     font-weight:${({theme}) => theme.fontWeight.bold};
-    font-size: ${({theme}) => theme.fontSize.small};
+    font-size: ${({theme}) => theme.fontSize.small}px;
     color: ${({theme}) => theme.colors.textSecondary};
     text-transform:uppercase;
 `
